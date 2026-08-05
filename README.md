@@ -45,7 +45,7 @@ with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=
 
 Calibrated on real Binance market data benchmarked against an oracle with perfect foresight. 
 
-*Note: dark pool capacities $D_i$ are pseudo-real — no public dark-pool liquidity data exists for crypto, so $D_i$ is proxied from correlated reference-asset volume rather than directly observed.*
+*Note: dark pool capacities* $D_i$ *are pseudo-real — no public dark-pool liquidity data exists for crypto, so $D_i$ is proxied from correlated reference-asset volume rather than directly observed.*
 
 ![Cost reduction and performance](cost-performance.png)
 
