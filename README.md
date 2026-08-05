@@ -24,9 +24,11 @@ By KKT condition, the maximizer $r^*$ is characterized by:
 \mathbb{E}\left[\underbrace{V\left(\rho_i \mathbf{1}_{\{r_i^* V < D_i\}} - \frac{1}{N}\sum_{j=1}^N \rho_j \mathbf{1}_{\{r_j^* V < D_j\}}\right)}_{=:H_i(r^*,Y)}\right] = 0, \qquad \forall i, \quad Y=(V,D_1,\dots,D_N).
 ```
 
-So $r^*$ solves $h(r):=\mathbb{E}[H(r,Y)]=0$, which is equivalent to setting the expectation vector to zero:
+So $r^*$ solves
 
 ```math
+h(r):=\mathbb{E}[H(r,Y)]
+\iff
 \begin{bmatrix}
 \mathbb{E}[H_1(r, Y)] \\
 \mathbb{E}[H_2(r, Y)] \\
@@ -56,15 +58,15 @@ with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=
 
 Calibrated on real Binance market data benchmarked against an oracle with perfect foresight.
 
-*Note: dark pool capacities $D_i$ are pseudo-real — no public dark-pool liquidity data exists for crypto, so $D_i$ is proxied from correlated reference-asset volume rather than directly observed.*
+*Note: dark pool capacities* $D_i$ *are pseudo-real — no public dark-pool liquidity data exists for crypto, so* $D_i$ *is proxied from correlated reference-asset volume rather than directly observed.*
 
 ![Cost reduction and performance](cost-performance.png)
 
-*Performance ratio $CR^{\text{opti}}/CR^{\text{oracle}}$ over time — how much of the oracle's unattainable cost saving the online algorithm captures.*
+*Performance ratio* $CR^{\text{opti}}/CR^{\text{oracle}}$ *over time — how much of the oracle's unattainable cost saving the online algorithm captures.*
 
 ![Allocation across dark pools](allocation.png)
 
-*Evolution of $r^{(k)}$ per pool, converging away from the uniform starting allocation toward the learned optimal split.*
+*Evolution of* $r^{(k)}$ *per pool, converging away from the uniform starting allocation toward the learned optimal split.*
 
 ## 4. References
 
