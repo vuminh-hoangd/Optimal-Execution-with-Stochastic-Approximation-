@@ -21,7 +21,7 @@ r^* \in \arg\max_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \rho_i \mathbb{E}[\min(r_i
 By KKT condition, the maximizer $r^*$ is characterized by:
 
 ```math
-\mathbb{E}\left[\underbrace{V\left(\rho_i \mathbf{1}_{\{r_i^* V < D_i\}} - \frac{1}{N}\sum_{j=1}^N \rho_j \mathbf{1}_{\{r_j^* V < D_j\}}\right)}_{=:H_i(r^*,Y)}\right] = 0, \qquad \forall i, \quad Y=(V,D_1,\dots,D_N).
+\mathbb{E}\left[\underbrace{V\left(\rho_i \mathbf{1}_{\{r_i^* V < D_i\}} - \frac{1}{N}\sum_{j=1}^N \rho_j \mathbf{1}_{\{r_j^* V < D_j\}}\right)}_{=:H_i(r^*,Y)}\right] = 0, \qquad \forall i=1,...,N, \text{and} Y=(V,D_1,\dots,D_N).
 ```
 
 So $r^*$ solves
