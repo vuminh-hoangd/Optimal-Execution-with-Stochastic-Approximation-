@@ -13,11 +13,8 @@ fills $\min(r_iV,D_i)$ there; the rest executes on the lit market at $S$.
 Minimizing expected execution cost is equivalent to finding $r^*$:
 
 $$
-r^* \in\argmax_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \rho_i \, \mathbb{E}[\min(r_i V, D_i)] =: \argmax_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \varphi_i(r_i)
-$$
-
-$$
-\mathcal P_N := \Big\{r\in\mathbb R_+^N : \sum_{i=1}^N r_i = 1\Big\}.
+r^* \in\argmax_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \rho_i \, \mathbb{E}[\min(r_i V, D_i)] =: \argmax_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \varphi_i(r_i),\qquad
+\mathcal P_N := \{r\in\mathbb R_+^N : \sum_{i=1}^N r_i = 1\Big\}.
 $$
 
 ## 2. Stochastic Approximation
