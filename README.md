@@ -13,7 +13,7 @@ fills $\min(r_iV,D_i)$ there; the rest executes on the lit market at $S$.
 Minimizing expected execution cost is equivalent to finding $r^*$:
 
 $$
-r^* \in \arg\max_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \rho_i \mathbb{E}[\min(r_i V, D_i)] =: \arg\max_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \varphi_i(r_i),\qquad \mathcal{P}_N := \{r \in \mathbb{R}_+^N : \sum_{i=1}^N r_i = 1\}.
+r^* \in \arg\max_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \rho_i \mathbb{E}[\min(r_i V, D_i)] =: \arg\max_{r \in \mathcal{P}_N} \sum_{i=1}^{N} \varphi_i(r_i),\qquad \mathcal{P}_N = {r \in \mathbb{R}_+^N : \sum_{i=1}^N r_i = 1}.
 $$
 
 ## 2. Stochastic Approximation
@@ -48,6 +48,12 @@ Calibrated on real Binance market data benchmarked against an oracle with perfec
 
 *Evolution of $r^{(k)}$ per pool, converging away from the uniform starting allocation toward the learned optimal split.*# Optimal Execution: Splitting Orders Across Dark Liquidity Pools
 
-Stochastic-approximation approach to routing an order across $N$ dark
-pools with unknown, time-varying liquidity.
+## References
+
+1. **Nonparametric generative modeling for time series via Schrödinger bridge**  
+   Mohamed Hamdouche, Pierre Henry-Labordère, and Huyên Pham.  
+   *Journal of Machine Learning Research (JMLR)*, 27(112):1–23, 2026.  
+   [Link to paper](https://www.jmlr.org/papers/volume27/23-1162/23-1162.pdf)
+
+
 
