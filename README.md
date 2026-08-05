@@ -27,6 +27,14 @@ $$
 So $r^*$ solves $h(r):=\mathbb{E}[H(r,Y)]=0$, which is equivalent to setting the expectation vector to zero:
 
 $$
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{bmatrix}
+$$
+
+$$
 \begin{bmatrix} \mathbb{E}[H_1(r, Y)] \\ \mathbb{E}[H_2(r, Y)] \\ \vdots \\ \mathbb{E}[H_N(r, Y)] \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix}
 $$
 
