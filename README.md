@@ -27,7 +27,7 @@ $$
 So $r^*$ solves $h(r):=\mathbb{E}[H(r,Y)]=0$, which is equivalent to setting the expectation vector to zero:
 
 $$
-\begin{bmatrix} \mathbb{E}[H_1(r, Y)] \\ \mathbb{E}[H_2(r, Y)] \\ \vdots \\ \mathbb{E}[H_N(r, Y)] \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix}
+\begin{pmatrix} \mathbb{E}[H_1(r, Y)] \\ \mathbb{E}[H_2(r, Y)] \\ \vdots \\ \mathbb{E}[H_N(r, Y)] \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{pmatrix}
 $$
 
 This is a zero of an expectation that can be **sampled** (one realized fill/no-fill per trading period) even though the distribution of $(V,D_i)$ is never known.
@@ -38,7 +38,7 @@ $$
 r^{(k+1)} = \Pi_{\mathcal{P}_N}\left(r^{(k)} + \gamma_{k+1}H\left(r^{(k)},Y^{(k+1)}\right)\right), \qquad \gamma_k=\frac{c}{k},
 $$
 
-with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=\infty$, $\sum\gamma_k^2<\infty$ and concavity of $\Phi$, $r^{(k)} \xrightarrow{\text{a.s.}} r^*$ as $k \to \infty$.
+with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=\infty$, $\sum\gamma_k^2<\infty$ and concavity of $\Phi$, $r^{(k)} \xrightarrow[k \to \infty]{\text{a.s.}} r^*$.
 
 ## 3. Experimental Results
 
