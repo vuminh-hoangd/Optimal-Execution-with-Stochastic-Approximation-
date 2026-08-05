@@ -49,11 +49,11 @@ This is a zero of an expectation that can be **sampled** (one realized fill/no-f
 ### Recursive procedure
 
 ```math
-r^{(k+1)} = \Pi_{\mathcal{P}_N}\left(r^{(k)} + \gamma_{k+1}H\left(r^{(k)},Y^{(k+1)}\right)\right), \qquad \gamma_k=\frac{c}{k},
+r^{(k+1)} = \Pi_{\mathcal{P}_N}\left(r^{(k)} + \gamma_{k+1}H\left(r^{(k)},Y^{(k+1)}\right)\right), \qquad \gamma_k=\frac{c}{k}, c > 0
 ```
 
 with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=\infty$, $\sum\gamma_k^2<\infty$ and concavity of $\Phi$, 
-```math r^{(k)} \xrightarrow[k \to \infty]{\text{a.s.}} r^*$ ```
+```math r^{(k)} \xrightarrow[k \to \infty]{\text{a.s.}} r^* ```
 
 ## 3. Experimental Results
 
