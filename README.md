@@ -49,7 +49,7 @@ Calibrated on real Binance market data benchmarked against an oracle with perfec
 
 ![Cost reduction and performance](cost-performance.png)
 
-*Performance ratio $CR^{\text{opti}}/CR^{\text{oracle}}$ over time — how much of the oracle's unattainable cost saving the online algorithm captures.*
+*Performance ratio* $CR^{\text{opti}}/CR^{\text{oracle}}$ *over time — how much of the oracle's unattainable cost saving the online algorithm captures.*
 
 ![Allocation across dark pools](allocation.png)
 
