@@ -45,7 +45,7 @@ with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=
 
 Calibrated on real Binance market data benchmarked against an oracle with perfect foresight. 
 
-*Note: dark pool capacities* $D_i$ *are pseudo-real — no public dark-pool liquidity data exists for crypto, so $D_i$ is proxied from correlated reference-asset volume rather than directly observed.*
+*Note: dark pool capacities* $D_i$ *are pseudo-real — no public dark-pool liquidity data exists for crypto, so* $D_i$ *is proxied from correlated reference-asset volume rather than directly observed.*
 
 ![Cost reduction and performance](cost-performance.png)
 
@@ -53,12 +53,12 @@ Calibrated on real Binance market data benchmarked against an oracle with perfec
 
 ![Allocation across dark pools](allocation.png)
 
-*Evolution of $r^{(k)}$ per pool, converging away from the uniform starting allocation toward the learned optimal split.*
+*Evolution of* $r^{(k)}$ *per pool, converging away from the uniform starting allocation toward the learned optimal split.*
 
 ## 4. References
 
-**
-Optimal Split of Orders Across Liquidity Pools: A Stochastic Algorithm Approach
-**
+**Optimal Split of Orders Across Liquidity Pools: A Stochastic Algorithm Approach**
+
 Authors: Sophie Laruelle, Charles-Albert Lehalle, and Gilles Pagès
+
 [Link to paper](https://www.jmlr.org/papers/volume27/23-1162/23-1162.pdf)
