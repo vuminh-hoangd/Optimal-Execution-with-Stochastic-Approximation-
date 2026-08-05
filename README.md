@@ -27,7 +27,7 @@ By KKT condition, the maximizer $r^*$ is characterized by:
 So $r^*$ solves
 
 ```math
-h(r):=\mathbb{E}[H(r,Y)]
+h(r):=\mathbb{E}[H(r,Y)] = 0
 \iff
 \begin{bmatrix}
 \mathbb{E}[H_1(r, Y)] \\
@@ -52,7 +52,8 @@ This is a zero of an expectation that can be **sampled** (one realized fill/no-f
 r^{(k+1)} = \Pi_{\mathcal{P}_N}\left(r^{(k)} + \gamma_{k+1}H\left(r^{(k)},Y^{(k+1)}\right)\right), \qquad \gamma_k=\frac{c}{k},
 ```
 
-with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=\infty$, $\sum\gamma_k^2<\infty$ and concavity of $\Phi$, $r^{(k)} \xrightarrow[k \to \infty]{\text{a.s.}} r^*$.
+with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=\infty$, $\sum\gamma_k^2<\infty$ and concavity of $\Phi$, 
+```math r^{(k)} \xrightarrow[k \to \infty]{\text{a.s.}} r^*$ ```
 
 ## 3. Experimental Results
 
