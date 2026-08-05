@@ -24,9 +24,10 @@ $$
 \mathbb{E}\left[\underbrace{V\left(\rho_i \mathbf{1}_{\{r_i^* V < D_i\}} - \frac{1}{N}\sum_{j=1}^N \rho_j \mathbf{1}_{\{r_j^* V < D_j\}}\right)}_{=:H_i(r^*,Y)}\right] = 0, \qquad \forall i, \quad Y=(V,D_1,\dots,D_N).
 $$
 
-So $r^*$ solves $h(r):=\mathbb{E}[H(r,Y)]=0$, which is equivalent to setting the expectation vector to zero:
+So $r^*$ solves:
 
 $$
+h(r):=\mathbb{E}[H(r,Y)]=0 \iff
 \begin{bmatrix} \mathbb{E}[H_1(r, Y)] \\ \mathbb{E}[H_2(r, Y)] \\ \vdots \\ \mathbb{E}[H_N(r, Y)] \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix}
 $$
 
