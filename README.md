@@ -24,7 +24,13 @@ $$
 \mathbb{E}\left[\underbrace{V\left(\rho_i \mathbf{1}_{\{r_i^* V < D_i\}} - \frac{1}{N}\sum_{j=1}^N \rho_j \mathbf{1}_{\{r_j^* V < D_j\}}\right)}_{=:H_i(r^*,Y)}\right] = 0, \qquad \forall i, \quad Y=(V,D_1,\dots,D_N).
 $$
 
-So $r^*$ solves $h(r):=\mathbb{E}[H(r,Y)]=0 \iff \begin{bmatrix} \mathbb{E}[H_1(r, Y)] \\ \mathbb{E}[H_2(r, Y)] \\ \vdots \\ \mathbb{E}[H_N(r, Y)] \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix}$ — a zero of an expectation that can be **sampled** (one realized fill/no-fill per trading period) even though the distribution of $(V,D_i)$ is never known.
+So $r^*$ solves $h(r):=\mathbb{E}[H(r,Y)]=0$, which is equivalent to setting the expectation vector to zero:
+
+$$
+\begin{bmatrix} \mathbb{E}[H_1(r, Y)] \\ \mathbb{E}[H_2(r, Y)] \\ \vdots \\ \mathbb{E}[H_N(r, Y)] \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix}
+$$
+
+This is a zero of an expectation that can be **sampled** (one realized fill/no-fill per trading period) even though the distribution of $(V,D_i)$ is never known.
 
 ### Recursive procedure
 
@@ -32,7 +38,7 @@ $$
 r^{(k+1)} = \Pi_{\mathcal{P}_N}\left(r^{(k)} + \gamma_{k+1}H\left(r^{(k)},Y^{(k+1)}\right)\right), \qquad \gamma_k=\frac{c}{k},
 $$
 
-with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=\infty$, $\sum\gamma_k^2<\infty$ and concavity of $\Phi$, $r^{(k)} \xrightarrow{\mathbb{P}\text{-a.s.}} r^*$ a.s.
+with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=\infty$, $\sum\gamma_k^2<\infty$ and concavity of $\Phi$, $r^{(k)} \xrightarrow{\text{a.s.}} r^*$ as $k \to \infty$.
 
 ## 3. Experimental Results
 
