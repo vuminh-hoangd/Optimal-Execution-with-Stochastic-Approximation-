@@ -53,7 +53,7 @@ r^{(k+1)} = \Pi_{\mathcal{P}_N}\left(r^{(k)} + \gamma_{k+1}H\left(r^{(k)},Y^{(k+
 ```
 
 with $\Pi_{\mathcal{P}_N}$ the projection onto the simplex. Under $\sum\gamma_k=\infty$, $\sum\gamma_k^2<\infty$, 
-$math r^{(k)} \xrightarrow{\text{a.s.}} r^*$
+$`r^{(k)} \xrightarrow[k \to \infty]{\text{a.s.}} r^*`$
 
 ## 3. Experimental Results
 
