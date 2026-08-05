@@ -26,9 +26,9 @@ $$
 
 So $r^*$ solves $h(r):=\mathbb{E}[H(r,Y)]=0$, which is equivalent to setting the expectation vector to zero:
 
-```math
-\(\begin{bmatrix}  \mathbb{E}[H_1(r, Y)] \\  \mathbb{E}[H_2(r, Y)] \\  \vdots \\  \mathbb{E}[H_N(r, Y)]  \end{bmatrix} =  \begin{bmatrix}  0 \\  0 \\  \vdots \\  0  \end{bmatrix} \%\%\)MAGIT_PARSER_PROTECT%%```
-
+$$
+\begin{bmatrix} \mathbb{E}[H_1(r, Y)] \\ \mathbb{E}[H_2(r, Y)] \\ \vdots \\ \mathbb{E}[H_N(r, Y)] \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix}
+$$
 
 This is a zero of an expectation that can be **sampled** (one realized fill/no-fill per trading period) even though the distribution of $(V,D_i)$ is never known.
 
