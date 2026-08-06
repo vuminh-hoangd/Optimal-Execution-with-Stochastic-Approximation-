@@ -1,13 +1,13 @@
 # Optimal Execution: Splitting Orders Across Dark Liquidity Pools
 
-Stochastic-approximation approach to routing an order across $N$ dark
+Stochastic-approximation approach to splitting an order across $N$ dark
 pools with unknown, time-varying liquidity.
 
 ## 1. Problem Formulation
 
 A random volume $V>0$ is executed across $N$ dark pools. Pool $i$ offers
 a rebate $\rho_i\in(0,1)$ on the reference price $S$ and has unobserved
-random capacity $D_i\ge0$. Routing a fraction $r_i$ of $V$ to pool $i$
+random capacity $D_i\ge0$. Splitting a fraction $r_i$ of $V$ to pool $i$
 fills $\min(r_iV,D_i)$ there; the rest executes on the lit market at $S$.
 
 Minimizing expected execution cost is equivalent to finding $r^*$:
