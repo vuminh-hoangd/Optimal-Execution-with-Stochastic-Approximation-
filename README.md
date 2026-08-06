@@ -8,7 +8,7 @@ pools with unknown, time-varying liquidity.
 A random volume $V>0$ is executed across $N$ dark pools. Pool $i$ offers
 a rebate (savings you get for each unit successfully filled in pool $i$) $\rho_i\in(0,1)$ on the reference price $S$ and has unobserved
 random capacity $D_i\ge0$. Splitting a fraction $r_i$ of $V$ to pool $i$
-fills $\min(r_iV,D_i)$ there; the rest executes on the lit market at $S$.
+fills $\min(r_iV,D_i)$ there; the rest executes on the primary market at $S$.
 
 Minimizing expected execution cost is equivalent to finding $r^*$:
 
