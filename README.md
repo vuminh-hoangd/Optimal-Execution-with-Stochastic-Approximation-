@@ -58,7 +58,7 @@ $$ r^{(k)} \xrightarrow[k \to \infty]{\text{a.s.}} r^* $$
 
 ## 3. Experimental Results
 
-Calibrated on real Binance market data benchmarked against an oracle with perfect foresight.
+Calibrated on real Binance market data benchmarked against an oracle with perfect foresight (insider trading).
 
 *Note: dark pool capacities* $D_i$ *are pseudo-real — no public dark-pool liquidity data exists, so* $D_i$ *is proxied from correlated reference-asset volume rather than directly observed.*
 
